@@ -1,0 +1,221 @@
+Prompt 1 multilabel zero shot:
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   55.78   0.56    0.55
+tempo            91.96   0.91    0.92
+grave            45.73   0.42    0.38
+moto             98.99   0.83    0.99
+utenti_deboli    79.40   0.59    0.83
+
+Metriche per etichetta:
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   64.40   0.62    0.61
+tempo            90.55   0.89    0.91
+grave            43.05   0.39    0.34
+moto             96.89   0.84    0.97
+utenti_deboli    73.75   0.60    0.78
+
+Label            Accuratezza    F1 medio        F1 ponderato        
+--------------------------------------------------
+localizzazione   63.52   0.61    0.60
+tempo            91.55   0.90    0.92
+grave            42.83   0.39    0.34
+moto             96.89   0.83    0.97
+utenti_deboli    74.30   0.61    0.78
+
+___________________________________________________________________________________
+
+Prompt 10 monolabel zero:
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   71.86   0.71    0.73
+tempo            70.35   0.41    0.58
+grave            75.88   0.75    0.76
+moto             98.99   0.75    0.99
+utenti_deboli    88.44   0.57    0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   73.30   0.73    0.73
+tempo            73.97   0.45    0.63
+grave            72.19   0.71    0.73
+moto             96.44   0.81    0.96
+utenti_deboli    83.54   0.56    0.82
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   74.19   0.74    0.74
+tempo            73.86   0.44    0.63
+grave            73.41   0.73    0.74
+moto             96.77   0.84    0.97
+utenti_deboli    84.65   0.60    0.83
+
+___________________________________________________________________________________
+
+Prompt 6 monolabel few shot:
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   74.87   0.74    0.76
+tempo            75.38   0.59    0.69
+grave            70.35   0.61    0.67
+moto             96.98   0.69    0.98
+utenti_deboli    89.95   0.62    0.89
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   78.98   0.79    0.79
+tempo            79.09   0.63    0.75
+grave            71.86   0.65    0.70
+moto             92.55   0.76    0.94
+utenti_deboli    86.32   0.66    0.86
+
+Label            Accuratezza    F1 medio        F1 ponderato        
+--------------------------------------------------
+localizzazione   78.98   0.79    0.79
+tempo            78.98   0.63    0.74
+grave            73.08   0.66    0.71
+moto             93.10   0.77    0.94
+utenti_deboli    86.21   0.65    0.85
+
+___________________________________________________________________________________
+
+Prompt 7 monolabel few shot:
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   67.84   0.68    0.69
+tempo            80.90   0.73    0.79
+grave            74.37   0.71    0.74
+moto             87.44   0.54    0.92
+utenti_deboli    85.93   0.63    0.87
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   75.31   0.75    0.75
+tempo            82.54   0.74    0.81
+grave            75.86   0.72    0.76
+moto             83.65   0.65    0.87
+utenti_deboli    81.76   0.66    0.83
+
+Label            Accuratezza    F1 medio        F1 ponderato        
+--------------------------------------------------
+localizzazione   74.53   0.74    0.74
+tempo            82.31   0.74    0.81
+grave            75.31   0.72    0.75
+moto             84.43   0.65    0.88
+utenti_deboli    81.42   0.65    0.83
+
+___________________________________________________________________________________
+
+Prompt 8 monolabel few shot:
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   65.33   0.65    0.66
+tempo            74.87   0.60    0.70
+grave            74.87   0.71    0.74
+moto             79.90   0.49    0.88
+utenti_deboli    86.93   0.62    0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   73.86   0.74    0.73
+tempo            81.42   0.71    0.79
+grave            75.42   0.71    0.75
+moto             70.97   0.54    0.79
+utenti_deboli    81.87   0.63    0.83
+
+Label            Accuratezza    F1 medio        F1 ponderato        
+--------------------------------------------------
+localizzazione   74.42   0.74    0.74
+tempo            81.31   0.71    0.79
+grave            75.97   0.72    0.75
+moto             70.86   0.54    0.79
+utenti_deboli    81.09   0.62    0.82
+___________________________________________________________________________________
+
+Prompt 9 monolabel few shot:
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   57.29   0.57    0.57
+tempo            73.37   0.64    0.71
+grave            73.87   0.71    0.74
+moto             53.27   0.37    0.68
+utenti_deboli    89.95   0.64    0.90
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   69.08   0.68    0.68
+tempo            79.53   0.71    0.78
+grave            75.19   0.72    0.75
+moto             51.72   0.42    0.63
+utenti_deboli    81.54   0.60    0.82
+
+Label            Accuratezza    F1 medio        F1 ponderato        
+--------------------------------------------------
+localizzazione   68.97   0.68    0.68
+tempo            78.98   0.69    0.77
+grave            76.08   0.73    0.76
+moto             51.39   0.42    0.63
+utenti_deboli    82.09   0.62    0.83
+
+___________________________________________________________________________________
+
+Prompt 11 multilabel few shot:
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   48.74   0.48    0.45
+tempo            90.45   0.89    0.91
+grave            79.40   0.78    0.80
+moto             96.98   0.74    0.98
+utenti_deboli    51.26   0.44    0.61
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   59.29   0.55    0.54
+tempo            92.66   0.91    0.93
+grave            70.97   0.70    0.72
+moto             93.55   0.79    0.94
+utenti_deboli    45.83   0.43    0.52
+
+Label            Accuratezza    F1 medio        F1 ponderato        
+--------------------------------------------------
+localizzazione   59.62   0.56    0.54
+tempo            92.10   0.90    0.92
+grave            70.08   0.70    0.71
+moto             93.44   0.79    0.94
+utenti_deboli    45.38   0.43    0.52
+
+___________________________________________________________________________________
+
+Prompt 2 multilabel few:
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   46.73   0.46    0.43
+tempo            83.92   0.83    0.85
+grave            76.88   0.76    0.77
+moto             98.49   0.83    0.99
+utenti_deboli    60.80   0.51    0.69
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   57.29   0.49    0.50
+tempo            80.20   0.79    0.81
+grave            67.19   0.73    0.75
+moto             95.44   0.83    0.96
+utenti_deboli    58.62   0.53    0.65
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   57.84   0.53    0.52
+tempo            79.76   0.78    0.81
+grave            67.07   0.67    0.68
+moto             95.33   0.82    0.96
+utenti_deboli    59.18   0.54    0.66

@@ -1,0 +1,406 @@
+Prompt 1: 4
+
+examples = {
+    "Le cause dell'incidente sono ora al vaglio della Stradale di Parma.": [0, 0, 0, 0, 0],
+    "Pauroso incidente in via Duca Alessandro.": [1, 0, 0, 0, 0],
+    "Poco dopo le ore 20, per cause in corso di accertamento, un'auto è finita nel fosso e si è ribaltata mentre stava percorrendo via Cavanna, nella frazione di Borgonovo.": [1, 1, 0, 0, 0],
+    "Dopo aver prestato le prime cure al motociclista l'avrebbero trasportato d'urgenza al pronto soccorso dell'Ospedale Maggiore di Parma.": [0, 0, 1, 1, 0]
+}
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   51.76   0.51    0.50
+tempo            77.39   0.77    0.78
+grave            74.87   0.74    0.75
+moto             95.48   0.69    0.97
+utenti_deboli    69.35   0.57    0.76
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   52.26   0.52    0.50
+tempo            78.89   0.78    0.80
+grave            75.38   0.75    0.76
+moto             95.48   0.69    0.97
+utenti_deboli    67.34   0.56    0.75
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   51.76   0.51    0.50
+tempo            78.39   0.78    0.79
+grave            74.37   0.74    0.75
+moto             95.98   0.70    0.97
+utenti_deboli    67.84   0.56    0.75
+
+_______________________________________________________________________________________________________
+
+Prompt 2: 4
+
+examples = {
+    "Le cause dell'incidente sono ora al vaglio della Stradale di Parma.": [0, 0, 0, 0, 0],
+    "Pauroso incidente in via Duca Alessandro.": [1, 0, 0, 0, 0],
+    "Dopo aver prestato le prime cure al motociclista l'avrebbero trasportato d'urgenza al pronto soccorso dell'Ospedale Maggiore di Parma.": [0, 0, 1, 1, 0],
+    "Per cause in corso di accertamento un ciclista di 50anni è stato investito da un furgone poco prima delle ore 6.30 in via IV Novembre.": [1, 1, 0, 0, 1]
+}
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   47.74   0.47    0.44
+tempo            81.41   0.80    0.82
+grave            75.88   0.75    0.76
+moto             98.49   0.83    0.99
+utenti_deboli    60.80   0.51    0.69
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   46.73   0.46    0.43
+tempo            82.91   0.82    0.84
+grave            77.39   0.77    0.78
+moto             98.49   0.83    0.99
+utenti_deboli    61.31   0.51    0.70
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   46.23   0.45    0.42
+tempo            81.91   0.81    0.83
+grave            76.88   0.76    0.77
+moto             98.49   0.83    0.99
+utenti_deboli    61.31   0.51    0.70
+
+_______________________________________________________________________________________________________
+
+Prompt 3: 6
+
+examples = {
+    "Le cause dell'incidente sono ora al vaglio della Stradale di Parma.": [0, 0, 0, 0, 0],
+    "Pauroso incidente in via Duca Alessandro.": [1, 0, 0, 0, 0],
+    "Poco dopo le ore 20, per cause in corso di accertamento, un'auto è finita nel fosso e si è ribaltata mentre stava percorrendo via Cavanna, nella frazione di Borgonovo.": [1, 1, 0, 0, 0],
+    "Dopo aver prestato le prime cure al motociclista l'avrebbero trasportato d'urgenza al pronto soccorso dell'Ospedale Maggiore di Parma.": [0, 0, 1, 1, 0],
+    "Per cause in corso di accertamento un ciclista di 50anni è stato investito da un furgone poco prima delle ore 6.30 in via IV Novembre.": [1, 1, 0, 0, 1],
+    "Paura per un motociclista caduto prima delle ore 9 della mattinata di giovedì 20 aprile a Baganzola.": [1, 1, 0, 1, 0]
+}
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   49.25   0.48    0.46
+tempo            64.82   0.65    0.66
+grave            77.89   0.77    0.78
+moto             89.45   0.58    0.93
+utenti_deboli    68.34   0.56    0.76
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   48.24   0.47    0.45
+tempo            63.32   0.63    0.64
+grave            77.89   0.77    0.78
+moto             89.95   0.59    0.94
+utenti_deboli    68.84   0.57    0.76
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   48.24   0.47    0.45
+tempo            65.83   0.66    0.67
+grave            78.39   0.77    0.79
+moto             89.45   0.58    0.93
+utenti_deboli    68.84   0.57    0.76
+
+_______________________________________________________________________________________________________
+
+Prompt 4: 6
+
+examples = {
+    "Le cause dell'incidente sono ora al vaglio della Stradale di Parma.": [0, 0, 0, 0, 0],
+    "Pauroso incidente in via Duca Alessandro.": [1, 0, 0, 0, 0],
+    "Poco dopo le ore 20, per cause in corso di accertamento, un'auto è finita nel fosso e si è ribaltata mentre stava percorrendo via Cavanna, nella frazione di Borgonovo.": [1, 1, 0, 0, 0],
+    "Dopo aver prestato le prime cure al motociclista l'avrebbero trasportato d'urgenza al pronto soccorso dell'Ospedale Maggiore di Parma.": [0, 0, 1, 1, 0],
+    "Per cause in corso di accertamento un ciclista di 50anni è stato investito da un furgone poco prima delle ore 6.30 in via IV Novembre.": [1, 1, 0, 0, 1],
+    "Erano da poco passare le ore 10 quando, per cause in corso di accertamento, una persona è stata urtata dal veicolo.": [0, 1, 0, 0, 1]
+}
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   47.74   0.47    0.44
+tempo            76.88   0.76    0.78
+grave            77.39   0.76    0.78
+moto             96.98   0.74    0.98
+utenti_deboli    57.79   0.49    0.67
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   48.24   0.47    0.45
+tempo            75.88   0.75    0.77
+grave            77.39   0.76    0.78
+moto             96.98   0.74    0.98
+utenti_deboli    59.30   0.50    0.68
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   48.24   0.47    0.45
+tempo            77.39   0.77    0.78
+grave            77.39   0.76    0.78
+moto             96.98   0.74    0.98
+utenti_deboli    60.30   0.51    0.69
+
+_______________________________________________________________________________________________________
+
+Prompt 5: 8
+
+examples = {
+    "Le cause dell'incidente sono ora al vaglio della Stradale di Parma.": [0, 0, 0, 0, 0],
+    "Pauroso incidente in via Duca Alessandro.": [1, 0, 0, 0, 0],
+    "Poco dopo le ore 20, per cause in corso di accertamento, un'auto è finita nel fosso e si è ribaltata mentre stava percorrendo via Cavanna, nella frazione di Borgonovo.": [1, 1, 0, 0, 0],
+    "Dopo aver prestato le prime cure al motociclista l'avrebbero trasportato d'urgenza al pronto soccorso dell'Ospedale Maggiore di Parma.": [0, 0, 1, 1, 0],
+    "Per cause in corso di accertamento un ciclista di 50anni è stato investito da un furgone poco prima delle ore 6.30 in via IV Novembre.": [1, 1, 0, 0, 1],
+    "Paura per un motociclista caduto prima delle ore 9 della mattinata di giovedì 20 aprile a Baganzola.": [1, 1, 0, 1, 0],
+    "Erano da poco passare le ore 10 quando, per cause in corso di accertamento, una persona è stata urtata dal veicolo.": [0, 1, 0, 0, 1],
+    "Il camionista deceduto all'ospedale di Parma aveva 60 anni ed era originario della provincia di Forlì.": [0, 0, 0, 0, 0]
+}
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   52.76   0.52    0.51
+tempo            64.32   0.64    0.65
+grave            74.37   0.74    0.75
+moto             94.97   0.67    0.96
+utenti_deboli    67.34   0.56    0.75
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   52.76   0.52    0.51
+tempo            63.32   0.63    0.64
+grave            72.86   0.72    0.73
+moto             94.47   0.66    0.96
+utenti_deboli    67.34   0.56    0.75
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   51.76   0.51    0.50
+tempo            62.81   0.63    0.63
+grave            72.86   0.72    0.73
+moto             94.97   0.67    0.96
+utenti_deboli    66.83   0.55    0.74
+
+_______________________________________________________________________________________________________
+
+Prompt 6: 4 - Il migliore tra i due con le frasi tagliate (1)
+
+examples = {
+    "Le cause dell'incidente sono ora al vaglio della Stradale di Parma.": [0, 0, 0, 0, 0],
+    "Pauroso incidente in via Duca Alessandro.": [1, 0, 0, 0, 0],
+    "Poco dopo le ore 20 un'auto si è ribaltata mentre stava percorrendo via Cavanna, nella frazione di Borgonovo.": [1, 1, 0, 0, 0],
+    "Il motociclista è stato trasportato d'urgenza al pronto soccorso dell'Ospedale Maggiore di Parma.": [0, 0, 1, 1, 0]
+}
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   48.24   0.47    0.45
+tempo            73.87   0.73    0.75
+grave            74.37   0.74    0.75
+moto             92.46   0.62    0.95
+utenti_deboli    64.32   0.54    0.72
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   49.25   0.48    0.46
+tempo            74.87   0.74    0.76
+grave            74.37   0.74    0.75
+moto             92.46   0.62    0.95
+utenti_deboli    64.32   0.54    0.72
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   48.24   0.47    0.45
+tempo            74.87   0.74    0.76
+grave            74.37   0.74    0.75
+moto             91.46   0.61    0.94
+utenti_deboli    63.82   0.53    0.72
+
+
+_______________________________________________________________________________________________________
+
+Prompt 7: 6 - Il migliore tra i due con le frasi tagliate (4)
+
+examples = {
+    "Le cause dell'incidente sono ora al vaglio della Stradale di Parma.": [0, 0, 0, 0, 0],
+    "Pauroso incidente in via Duca Alessandro.": [1, 0, 0, 0, 0],
+    "Poco dopo le ore 20 un'auto si è ribaltata mentre stava percorrendo via Cavanna": [1, 1, 0, 0, 0],
+    "Il motociclista è stato trasportato d'urgenza al pronto soccorso dell'ospedale di Parma.": [0, 0, 1, 1, 0],
+    "Un ciclista è stato investito prima delle ore 6.30 in via IV Novembre.": [1, 1, 0, 0, 1],
+    "Poco dopo le ore 10 quando una persona è stata urtata dal veicolo.": [0, 1, 0, 0, 1],
+}
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   43.22   0.41    0.37
+tempo            72.36   0.72    0.73
+grave            77.89   0.77    0.78
+moto             95.48   0.69    0.97
+utenti_deboli    49.25   0.43    0.59
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   42.71   0.41    0.36
+tempo            72.86   0.72    0.74
+grave            77.89   0.77    0.78
+moto             95.48   0.69    0.97
+utenti_deboli    49.25   0.43    0.59
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   43.22   0.41    0.37
+tempo            74.37   0.74    0.75
+grave            77.89   0.77    0.78
+moto             95.48   0.69    0.97
+utenti_deboli    50.25   0.44    0.60
+
+_______________________________________________________________________________________________________
+
+Prompt 8: 8 - Frasi tagliate
+
+examples = {
+    "Le cause dell'incidente sono ora al vaglio della Stradale di Parma.": [0, 0, 0, 0, 0],
+    "Pauroso incidente in via Duca Alessandro.": [1, 0, 0, 0, 0],
+    "Poco dopo le ore 20 un'auto si è ribaltata mentre stava percorrendo via Cavanna": [1, 1, 0, 0, 0],
+    "Il motociclista è stato trasportato d'urgenza al pronto soccorso dell'ospedale di Parma.": [0, 0, 1, 1, 0],
+    "Un ciclista è stato investito prima delle ore 6.30 in via IV Novembre.": [1, 1, 0, 0, 1],
+    "Motociclista caduto alle ore 9 di giovedì 20 aprile a Baganzola.": [1, 1, 0, 1, 0],
+    "Poco dopo le ore 10 quando una persona è stata urtata dal veicolo.": [0, 1, 0, 0, 1],
+    "Il camionista deceduto all'ospedale di Parma era originario della provincia di Forlì.": [0, 0, 0, 0, 0]
+}
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   44.72   0.43    0.40
+tempo            63.82   0.64    0.64
+grave            76.38   0.75    0.77
+moto             96.98   0.74    0.98
+utenti_deboli    60.80   0.51    0.69
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   45.23   0.44    0.40
+tempo            63.32   0.63    0.64
+grave            74.87   0.74    0.75
+moto             97.49   0.77    0.98
+utenti_deboli    64.82   0.54    0.73
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   44.22   0.43    0.39
+tempo            63.82   0.64    0.64
+grave            75.38   0.74    0.76
+moto             97.49   0.77    0.98
+utenti_deboli    63.32   0.53    0.71
+
+_______________________________________________________________________________________________________
+
+Prompt 9: 6 - Nuove frasi e modificate
+
+examples = {
+    "Le cause dell'incidente sono ora al vaglio della Stradale di Parma.": [0, 0, 0, 0, 0],
+    "Pauroso incidente in via Duca Alessandro.": [1, 0, 0, 0, 0],
+    "L'incidente è avvenuto poco prima delle ore 12.": [0, 1, 0, 0, 0],
+    "Dopo aver prestato le prime cure al motociclista, lo hanno trasportato d'urgenza al pronto soccorso dell'ospedale di Parma.": [0, 0, 1, 1, 0],
+    "Un ciclista di 50 anni è stato investito da un furgone poco prima delle ore 6.30 in via IV Novembre.": [1, 1, 0, 0, 1],
+    "Erano da poco passate le ore 10 quando una persona è stata urtata dal veicolo.": [0, 1, 0, 0, 1]
+}
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   43.22   0.41    0.37
+tempo            87.94   0.87    0.88
+grave            77.39   0.76    0.78
+moto             97.49   0.77    0.98
+utenti_deboli    51.76   0.45    0.61
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   42.71   0.41    0.36
+tempo            86.43   0.85    0.87
+grave            76.88   0.76    0.77
+moto             97.49   0.77    0.98
+utenti_deboli    52.26   0.45    0.62
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   43.22   0.41    0.37
+tempo            87.94   0.87    0.88
+grave            77.39   0.76    0.78
+moto             97.49   0.77    0.98
+utenti_deboli    51.76   0.45    0.61
+_______________________________________________________________________________________________________
+
+Prompt 10:
+
+examples = {
+    "Le cause dell'incidente sono ora al vaglio della Stradale di Parma.": [0, 0, 0, 0, 0],
+    "Pauroso incidente in via Duca Alessandro.": [1, 0, 0, 0, 0],
+    "L'incidente è avvenuto prima delle ore 12.": [0, 1, 0, 0, 0],
+    "Le sue condizioni sono gravi.": [0, 0, 1, 0, 0],
+    "Un motociclista è caduto mentre percorreva una strada di campagna.": [0, 0, 0, 1, 0],
+    "Un pedone è stato investito da un'auto.": [0, 0, 0, 0, 1],
+    "Un ciclista è stato investito alle ore 6.30 in via IV Novembre.": [1, 1, 0, 0, 1],
+    "Sul posto la Polizia Municipale e gli operatori del 118, arrivati dall'ospedale di Parma.": [0, 0, 0, 0, 0]
+}
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   47.74   0.47    0.44
+tempo            90.45   0.89    0.91
+grave            76.88   0.76    0.77
+moto             96.98   0.74    0.98
+utenti_deboli    52.26   0.45    0.62
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   47.24   0.46    0.43
+tempo            90.95   0.90    0.91
+grave            77.39   0.76    0.78
+moto             96.98   0.74    0.98
+utenti_deboli    51.76   0.45    0.61
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   47.24   0.46    0.43
+tempo            91.46   0.90    0.92
+grave            77.39   0.76    0.78
+moto             96.98   0.74    0.98
+utenti_deboli    50.75   0.44    0.60
+
+_______________________________________________________________________________________________________
+
+11
+
+examples = {
+    "Le cause dell'incidente sono ora al vaglio della Stradale di Parma.": [0,0,0,0,0],
+    "Pauroso incidente in via Duca Alessandro.": [1,0,0,0,0],
+    "Un ciclista è stato investito alle ore 6:30 in via IV Novembre.": [1,1,0,0,1],
+    "Il motociclista è stato trasportato d'urgenza al pronto soccorso di Parma in condizioni gravi.": [0,0,1,1,0],
+    "L'incidente è avvenuto intorno alle 20 di ieri sera.": [0,1,0,0,0],
+    "Scontro nei pressi del ponte di Colorno, sulla strada provinciale 12.": [1,0,0,0,0],
+    "Il camionista deceduto all'ospedale di Parma era originario della provincia di Forlì.": [0,0,0,0,0],
+    "Un bambino in bicicletta è stato urtato da un’auto.": [0,0,0,0,1]
+}
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   48.74   0.48    0.45
+tempo            89.95   0.89    0.90
+grave            79.90   0.79    0.80
+moto             96.98   0.74    0.98
+utenti_deboli    49.75   0.43    0.59
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   48.74   0.48    0.45
+tempo            89.95   0.89    0.90
+grave            79.40   0.78    0.80
+moto             96.98   0.74    0.98
+utenti_deboli    50.25   0.44    0.60
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   49.25   0.48    0.46
+tempo            88.94   0.88    0.89
+grave            79.40   0.78    0.80
+moto             96.98   0.74    0.98
+utenti_deboli    50.75   0.44    0.60

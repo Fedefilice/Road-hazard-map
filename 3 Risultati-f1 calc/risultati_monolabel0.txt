@@ -1,0 +1,365 @@
+Prompt 1:
+
+label_prompts = {
+    "localizzazione": "Si capisce dove è avvenuto l'incidente?",
+    "tempo": "Ci sono riferimenti temporali?",
+    "grave": "L'incidente è grave?",
+    "moto": "C’entra una moto?",
+    "utenti_deboli": "Ci sono persone vulnerabili coinvolte?"
+}
+
+Label           Accuratezza  F1 medio   F1 ponderato
+--------------------------------------------------
+localizzazione  38.19%       0.36       0.31
+tempo           40.20%       0.39       0.35
+grave           62.81%       0.63       0.63
+moto            98.99%       0.75       0.99
+utenti_deboli   84.92%       0.52       0.85
+
+Label           Accuratezza  F1 medio   F1 ponderato
+--------------------------------------------------
+localizzazione  41.71% 0.41 0.39
+tempo           69.35% 0.65 0.70
+grave           58.79% 0.58 0.60
+moto            98.49% 0.78 0.99
+utenti_deboli   90.95% 0.69 0.91
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   43.72   0.43    0.41
+tempo            67.84   0.64    0.69
+grave            57.29   0.57    0.58
+moto             97.99   0.66    0.98
+utenti_deboli    91.46   0.72    0.92
+
+_______________________________________________________________________________________________________
+
+Prompt 2:
+
+label_prompts = {
+    "localizzazione": "La frase menziona specificamente dove è avvenuto l'incidente (via, piazza, comune, frazione)?",
+    "tempo": "Viene indicato quando è successo (orario, data, riferimenti temporali relativi)?\n",
+    "grave": "L'incidente ha conseguenze serie (vittime, feriti gravi, ricoveri, traumi significativi)?\n",
+    "moto": "Sono coinvolti moto, scooter, motorini o simili?\n",
+    "utenti_deboli": "Sono coinvolti pedoni, ciclisti o altre categorie deboli?\n\n"
+}
+
+Label           Accuratezza  F1 medio   F1 ponderato
+--------------------------------------------------
+localizzazione  86.93%       0.85       0.87
+tempo           76.88%       0.76       0.78
+grave           38.69%       0.33       0.28
+moto            89.95%       0.59       0.94
+utenti_deboli   90.95%       0.48       0.88
+
+Metriche per etichetta:
+Label           Accuratezza  F1 medio   F1 ponderato
+--------------------------------------------------
+localizzazione  70.85 0.70 0.72
+tempo           70.35 0.43 0.59
+grave           71.86 0.64 0.69
+moto            98.49 0.50 0.98
+utenti_deboli   91.96 0.48 0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   71.86   0.71    0.73
+tempo            70.35   0.41    0.58
+grave            67.84   0.58    0.64
+moto             98.49   0.50    0.98
+utenti_deboli    91.96   0.48    0.88
+
+_______________________________________________________________________________________________________
+
+Prompt 3:
+
+label_prompts = {
+    "localizzazione": "Il testo indica chiaramente il luogo dell'incidente?",
+    "tempo": "Sono presenti dettagli sull'orario o la data?",
+    "grave": "Si parla di feriti gravi o danni significativi?",
+    "moto": "Viene menzionato un veicolo a due ruote?",
+    "utenti_deboli": "Sono coinvolti pedoni, ciclisti o bambini?"
+}
+
+Label           Accuratezza  F1 medio   F1 ponderato
+--------------------------------------------------
+localizzazione  55.28%       0.55       0.55
+tempo           78.39%       0.71       0.77
+grave           49.25%       0.49       0.48
+moto            94.47%       0.66       0.96
+utenti_deboli   90.95%       0.48       0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   51.26   0.51    0.49
+tempo            70.35   0.41    0.58
+grave            67.34   0.67    0.68
+moto             95.98   0.70    0.97
+utenti_deboli    91.96   0.48    0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   53.27   0.53    0.51
+tempo            70.35   0.41    0.58
+grave            68.34   0.68    0.69
+moto             95.98   0.70    0.97
+utenti_deboli    91.96   0.48    0.88
+_______________________________________________________________________________________________________
+
+Prompt 4 (Role Playing):
+
+"Sei un analista che categorizza articoli di incidenti stradali per un database giornalistico.\n"
+"Classifica questa frase l'etichetta binaria seguente per organizzare le notizie di incidenti stradali:\n\n"
+
+label_prompts = {
+    "localizzazione": "Puoi dedurre il luogo dell'incidente dalla frase?",
+    "tempo": "Quando è successo l'incidente?",
+    "grave": "L'incidente sembra grave?",
+    "moto": "Ci sono indizi che coinvolgono una moto?",
+    "utenti_deboli": "Ci sono prove che coinvolgono utenti vulnerabili?"
+}
+
+Label           Accuratezza  F1 medio   F1 ponderato
+--------------------------------------------------
+localizzazione  64.82%       0.62       0.66
+tempo           72.36%       0.48       0.63
+grave           45.23%       0.44       0.41
+moto            98.49%       0.70       0.98
+utenti_deboli   92.46%       0.54       0.89
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   68.84   0.67    0.70
+tempo            70.85   0.45    0.60
+grave            48.24   0.46    0.43
+moto             99.50   0.90    0.99
+utenti_deboli    91.46   0.48    0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   66.83   0.64    0.68
+tempo            71.86   0.47    0.61
+grave            45.23   0.43    0.40
+moto             97.99   0.74    0.98
+utenti_deboli    91.96   0.48    0.88
+
+_______________________________________________________________________________________________________
+
+Prompt 5:
+
+label_prompts = {
+    "localizzazione": "La frase contiene informazioni precise sul luogo?",
+    "tempo": "Sono riportati dettagli temporali?",
+    "grave": "L'incidente è descritto come serio?",
+    "moto": "Si fa riferimento a moto o scooter?",
+    "utenti_deboli": "Vengono citati soggetti deboli come pedoni o ciclisti?"
+}
+
+Label           Accuratezza  F1 medio   F1 ponderato
+--------------------------------------------------
+localizzazione  60.80%       0.61       0.62
+tempo           69.85%       0.69       0.71
+grave           38.19%       0.32       0.26
+moto            96.48%       0.72       0.97
+utenti_deboli   89.95%       0.68       0.90
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   60.30   0.60    0.60
+tempo            68.84   0.50    0.62
+grave            51.26   0.51    0.51
+moto             100.00  1.00    1.00
+utenti_deboli    94.47   0.77    0.94
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   61.81   0.62    0.62
+tempo            67.84   0.46    0.60
+grave            51.76   0.52    0.51
+moto             99.50   0.93    1.00
+utenti_deboli    94.97   0.79    0.94
+
+_______________________________________________________________________________________________________
+
+SECONDA BATCH (da revisionare)
+
+prompt 6:
+
+label_prompts = {
+    "localizzazione": "Si capisce dove è avvenuto l'incidente?",
+    "tempo": "Ci sono riferimenti temporali?",
+    "grave": "L'incidente ha conseguenze serie (vittime, feriti gravi, ricoveri, traumi significativi)?",
+    "moto": "Sono coinvolti moto, scooter, motorini o simili?",
+    "utenti_deboli": "Sono coinvolti pedoni, ciclisti o altre categorie deboli?"
+}
+
+Metriche per etichetta:
+Label           Accuratezza  F1 medio   F1 ponderato
+--------------------------------------------------
+localizzazione  43.72%       0.43       0.41
+tempo           72.86%       0.70       0.74
+grave           67.84%       0.67       0.69
+moto            99.50%       0.90       0.99
+utenti_deboli   92.96%       0.63       0.91
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   44.22   0.43    0.41
+tempo            73.87   0.71    0.75
+grave            70.35   0.69    0.71
+moto             98.99   0.75    0.99
+utenti_deboli    91.46   0.57    0.89
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   47.74   0.47    0.46
+tempo            71.86   0.69    0.73
+grave            74.37   0.74    0.75
+moto             98.49   0.70    0.98
+utenti_deboli    92.46   0.62    0.91
+
+_______________________________________________________________________________________________________
+
+Prompt 7:
+
+label_prompts = {
+    "localizzazione": "dove è avvenuto l'incidente?",
+    "tempo": "Quando è avvenuto l’incidente?",
+    "grave": "Ci sono state conseguenze gravi per le persone coinvolte?",
+    "moto": "Sono coinvolti moto, scooter, motorini o simili?",
+    "utenti_deboli": "Sono coinvolti utenti deboli della strada?"
+}
+
+Metriche per etichetta:
+Label           Accuratezza  F1 medio   F1 ponderato
+--------------------------------------------------
+localizzazione  43.22%       0.42       0.38
+tempo           70.85%       0.45       0.60
+grave           76.38%       0.75       0.77
+moto            98.99%       0.75       0.99
+utenti_deboli   91.46%       0.66       0.91
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   46.73   0.46    0.43
+tempo            71.86   0.47    0.61
+grave            75.38   0.74    0.76
+moto             98.99   0.75    0.99
+utenti_deboli    89.95   0.64    0.90
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   46.23   0.45    0.42
+tempo            69.85   0.43    0.59
+grave            75.38   0.74    0.76
+moto             98.49   0.50    0.98
+utenti_deboli    88.94   0.58    0.88
+_______________________________________________________________________________________________________
+
+Prompt 8:
+
+label_prompts = {
+    "localizzazione": "dove è avvenuto l'incidente? Potrebbe menzionare via, piazza, strada...",
+    "tempo": "Quando è avvenuto l’incidente? Potrebbe menzionare orario, mattina, pomeriggio, sera...",
+    "grave": "Ci sono state conseguenze gravi per le persone coinvolte? potrebbe menzionare morti, urgenza, condizioni gravi...",
+    "moto": "Sono coinvolti moto, scooter, motorini o simili?",
+    "utenti_deboli": "Sono coinvolti utenti deboli della strada? Potrebbe menzionare bambini, anziani, disabili, monopattini, biciclette..."
+}
+
+Metriche per etichetta:
+Label           Accuratezza  F1 medio   F1 ponderato
+--------------------------------------------------
+localizzazione  70.35%       0.70       0.71
+tempo           72.86%       0.52       0.65
+grave           67.34%       0.67       0.68
+moto            98.49%       0.50       0.98
+utenti_deboli   88.44%       0.51       0.87
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   70.35   0.69    0.71
+tempo            72.36   0.49    0.63
+grave            69.85   0.69    0.71
+moto             98.49   0.50    0.98
+utenti_deboli    88.44   0.51    0.87
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   68.84   0.68    0.70
+tempo            71.36   0.46    0.61
+grave            67.84   0.68    0.68
+moto             97.99   0.49    0.97
+utenti_deboli    87.44   0.50    0.86
+
+_______________________________________________________________________________________________________
+
+Prompt 9:
+
+label_prompts = {
+    "localizzazione": "La frase fornisce dettagli concreti sul luogo dell'incidente, come nomi di strade o punti di riferimento?",
+    "tempo": "Sono presenti informazioni esplicite sull'orario, la data o il periodo in cui è avvenuto l'incidente?",
+    "grave": "Il testo descrive conseguenze gravi, come feriti, decessi, interventi medici urgenti o danni ingenti?",
+    "moto": "Viene menzionato esplicitamente un veicolo a due ruote (moto, scooter, motorino) come parte dell'incidente?",
+    "utenti_deboli": "La frase indica il coinvolgimento di persone considerate vulnerabili nel traffico (pedoni, ciclisti, bambini, anziani, disabili)?"
+}
+
+Metriche per etichetta:
+Label           Accuratezza  F1 medio   F1 ponderato
+--------------------------------------------------
+localizzazione  66.33%       0.66       0.67
+tempo           69.85%       0.41       0.58
+grave           72.86%       0.65       0.70
+moto            97.49%       0.77       0.98
+utenti_deboli   89.45%       0.47       0.87
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   63.82   0.63    0.65
+tempo            70.35   0.41    0.58
+grave            71.86   0.64    0.69
+moto             96.98   0.74    0.98
+utenti_deboli    89.95   0.47    0.87
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   64.82   0.65    0.66
+tempo            70.85   0.43    0.59
+grave            74.37   0.68    0.72
+moto             96.98   0.74    0.98
+utenti_deboli    88.44   0.47    0.86
+
+_______________________________________________________________________________________________________
+
+Prompt 10:
+
+label_prompts = {
+    "localizzazione": "La frase menziona specificamente dove è avvenuto l'incidente (via, piazza, comune, frazione)?",
+    "tempo": "Viene indicato quando è successo (orario, data, riferimenti temporali relativi)?\n",
+    "grave": "Ci sono state conseguenze gravi per le persone coinvolte?",
+    "moto": "Sono coinvolti moto, scooter, motorini o simili?",
+    "utenti_deboli": "Sono coinvolti utenti deboli della strada?"
+}
+
+Label           Accuratezza  F1 medio   F1 ponderato
+--------------------------------------------------
+localizzazione  70.35%       0.69       0.71
+tempo           70.35%       0.43       0.59
+grave           77.39%       0.76       0.78
+moto            98.99%       0.75       0.99
+utenti_deboli   88.44%       0.54       0.87
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   70.35   0.70    0.71
+tempo            69.85   0.41    0.58
+grave            77.89   0.76    0.78
+moto             99.50   0.90    0.99
+utenti_deboli    90.45   0.62    0.90
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   69.85   0.69    0.71
+tempo            70.85   0.43    0.59
+grave            73.37   0.71    0.74
+moto             98.49   0.50    0.98
+utenti_deboli    88.94   0.58    0.88

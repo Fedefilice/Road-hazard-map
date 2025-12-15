@@ -1,0 +1,7 @@
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   74.75   0.75    0.74
+tempo            82.76   0.74    0.81
+grave            74.86   0.71    0.74
+moto             83.76   0.65    0.88
+utenti_deboli    80.76   0.65    0.83

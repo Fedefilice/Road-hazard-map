@@ -1,0 +1,507 @@
+Prompt 1-3: frasi complete, 2,4,6 esempi
+
+examples = {
+    "localizzazione": [
+        ("La sua auto è uscita di strada e si è schiantata contro una pianta in località Baracca Ceno.", 1),
+        ("Come sindaco e come rappresentante della comunità ci tengo a ricordarlo.", 0),
+        ("Pauroso scontro frontale oggi pomeriggio, 15 aprile, in via Togliatti a Langhirano.", 1),
+        ("Al momento, nel tratto interessato, il traffico è regolare.", 0),
+        ("Loris Catelli, 77enne investito da un'auto nel pomeriggio di martedì scorso, è deceduto nel pomeriggio di venerdì 14 aprile all'Ospedale Maggiore di Parma, dove si trovava ricoverato dopo il gravissimo incidente avvenuto in via Roma Nord a Vezzano, in provincia di Reggio Emilia, verso le 16.30.", 1),
+        ("Sul posto la Polizia Municipale e gli operatori del 118.", 0),
+        ("In via Colorno, i vigili del fuoco stanno spostando il camion coinvolto nell'incidente.", 1),
+        ("Non si conoscono al momento le cause dell'incidente.", 0),
+    ],
+    "tempo": [
+        ("E' accaduto tutto stamattina, 14 aprile, intorno alle 8,30 in via Pasubio.", 1),
+        ("Il conducente ha perso il controllo del veicolo, che è uscito dalla carreggiata.", 0),
+        ("Il bilancio del terribile scontro di ieri pomeriggio sulla provinciale cremonese a Ragazzola è stato pesante.", 1),
+        ("Si sta cercando di ricostruire la dinamica dell'incidente.", 0),
+        ("L'incidente si è verificato verso le ore 22.", 1),
+        ("Auto travolta da un carico di marmo di un tir in A1 AUTOSTRADE - Sulla A1 Milano Napoli, tra Terre di Canossa e Reggio Emilia verso Bologna, è stata disposta la chiusura del tratto, al cui interno il traffico è bloccato con 5 km di coda in aumento, per il ribaltamento del rimorchio di un camion, che trasportava marmo ed altro materiale, avvenuto all' altezza del km 129.", 0),
+        ("AUTOSTRADE - Poco prima delle ore 04.30 sullautostrada A1 Milano - Napoli, è stato riaperto il tratto compreso tra Terre di Canossa Campegine e Parma in direzione Milano, chiuso a seguito di un incidente avvenuto al km 116 che ha visto coinvolti due veicoli leggeri e due mezzi pesanti.", 1),
+        ("Secondo le prime informazioni l'incidente non avrebbe provocato feriti gravi ma alcuni disagi alla circolazione lungo il tratto autostradale interessato.", 0),
+    ],
+    "grave": [
+        ("Le sue condizioni di salute sono gravi ma non è in pericolo di vita.", 1),
+        ("L’automobilista ha riportato solo lievi escoriazioni.", 0),
+        ("I sanitari lo hanno immobilizzato e poi trasportato in codice rosso al pronto soccorso dell'Ospedale Maggiore di Parma.", 1),
+        ("La dinamica dell'incidente non è ancora chiara.", 0),
+        ("Dopo il caso di una donna trans investita e uccisa da un'auto mentre si trovava a piedi lungo la tangenziale Sud ora un nuovo caso di investimento di un pedone, questa volta lungo la tangenziale Nord.", 1),
+        ("L'altro conducente non ha riportato ferite e ha rifiutato il trasporto in Ospedale per gli accertamenti.", 0),
+        ("Un anziano è stato investito da un auto ed è stato trasportato d'urgenza all'Ospedale Maggiore di Parma.", 1),
+        ("Nella mattinata di oggi, domenica 26 febbraio, si è verificato un incidente stradale che ha coinvolto anche un'ambulanza ma che non ha provocato, fortunatamente, feriti gravi.", 0),
+    ],
+    "moto": [
+        ("Paura per un motociclista caduto prima delle ore 9 della mattinata di giovedì 20 aprile a Baganzola.", 1),
+        ("Secondo le prime informazioni dopo un contatto tra l'auto e il camion, per cause in corso di accertamento, il rimorchio si sarebbe ribaltato, andato a finire proprio contro l'auto.", 0),
+        ("Secondo le prime informazioni il conducente della moto, un ragazzo minorenne, sarebbe caduto rovinosamente sull'asfalto per cause in corso di accertamento.", 1),
+        ("Paura per un ciclista caduto prima delle ore 9 della mattinata di giovedì 20 aprile a Baganzola.", 0),
+        ("Secondo le prime informazioni un motociclista sarebbe caduto sull'asfalto dopo essersi schiantato contro un guardrail, mentre stava affrontando la curva del Masdone, appena fuori dall'abitato di Traversetolo, in direzione Tortiano.", 1),
+        ("Un pedone è stato investito da un'auto mentre si trovava lungo la carreggiata.", 0),
+        ("Per cause in corso di accertamento un'auto e una moto si sono scontrate.", 1),
+        ("Per cause in corso di accertamento, due auto sono venute in collisione, provocando il ferimento di quattro persone.", 0),
+    ],
+    "utenti_deboli": [
+        ("All'interno dell'auto anche due bambini, che sono rimasti miracolosamente illesi.", 1),
+        ("L'altro conducente non ha riportato ferite e ha rifiutato il trasporto in Ospedale per gli accertamenti.", 0),
+        ("Il frontale tra due auto (dopo l'impatto finite fuori strada) sulla Provinciale che da Ragazzola porta a Soragna non ha purtroppo lasciato scampo all'anziana 82enne.", 1),
+        ("Il conducente dell'auto è rimasto ferito mentre il camionista è rimasto illeso.", 0),
+        ("A Fidenza, poco dopo le 8.30, un ciclista è stato investito da un'auto nella zona del quartiere artigianale La Bionda.", 1),
+        ("Erano da poco passate le ore 7.30 quando, per cause in corso di ricostruzione, l'auto è finita fuori strada e si è ribaltata.", 0),
+        ("Il bambino non sarebbe comunque in pericolo di vita: dopo l'arrivo ieri pomeriggio nell'area rossi dell'Ospedale con un sospetto trauma cranico e una sospetta frattura del femore è stato visitato dai medici, che hanno effettuato alcuni accertamenti medici.", 1),
+        ("In serata il tratto è stato riaperto ma fino a notte venivano segnalate coda fra Piacenza e Terre di Canosssa-Campegine.", 0),
+    ]
+}
+
+1:
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   74.87   0.74    0.76
+tempo            70.85   0.43    0.59
+grave            70.35   0.62    0.67
+moto             95.48   0.69    0.97
+utenti_deboli    90.45   0.52    0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   74.87   0.74    0.76
+tempo            70.85   0.43    0.59
+grave            70.35   0.62    0.67
+moto             95.48   0.69    0.97
+utenti_deboli    90.45   0.52    0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   74.87   0.74    0.76
+tempo            70.85   0.43    0.59
+grave            70.35   0.62    0.67
+moto             95.48   0.69    0.97
+utenti_deboli    90.45   0.52    0.88
+
+..............................................................
+
+2:
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   60.30   0.60    0.60
+tempo            74.37   0.59    0.69
+grave            69.85   0.60    0.66
+moto             84.92   0.49    0.91
+utenti_deboli    86.93   0.60    0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   60.30   0.60    0.60
+tempo            74.37   0.59    0.69
+grave            69.85   0.60    0.66
+moto             84.92   0.49    0.91
+utenti_deboli    86.93   0.60    0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   60.30   0.60    0.60
+tempo            74.37   0.59    0.69
+grave            70.35   0.61    0.67
+moto             84.92   0.49    0.91
+utenti_deboli    86.93   0.60    0.88
+
+...............................................................
+
+3:
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   60.80   0.61    0.61
+tempo            74.37   0.63    0.71
+grave            71.36   0.69    0.71
+moto             50.25   0.36    0.65
+utenti_deboli    88.44   0.60    0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   60.80   0.61    0.61
+tempo            74.37   0.63    0.71
+grave            70.85   0.68    0.71
+moto             50.25   0.36    0.65
+utenti_deboli    88.44   0.60    0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   60.80   0.61    0.61
+tempo            74.37   0.63    0.71
+grave            71.36   0.69    0.71
+moto             50.25   0.36    0.65
+utenti_deboli    88.94   0.63    0.89
+_______________________________________________________________________________________________________
+
+Prompt 4: parametri mod 3 - 4es
+
+    temperature=0.6,
+    top_p=0.2,
+    top_k=40,
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   60.30   0.60    0.60
+tempo            77.39   0.67    0.75
+grave            73.87   0.70    0.73
+moto             84.92   0.49    0.91
+utenti_deboli    86.93   0.60    0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   60.30   0.60    0.60
+tempo            77.39   0.67    0.75
+grave            73.87   0.70    0.73
+moto             84.92   0.49    0.91
+utenti_deboli    86.93   0.60    0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   60.30   0.60    0.60
+tempo            77.39   0.67    0.75
+grave            73.87   0.70    0.73
+moto             84.92   0.49    0.91
+utenti_deboli    86.93   0.60    0.88
+
+_______________________________________________________________________________________________________
+
+Prompt 5: parametri mod 3 - 4es
+
+    temperature=0.8,
+    top_p=0.4,
+    top_k=40,
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   60.30   0.60    0.60
+tempo            78.89   0.70    0.77
+grave            72.36   0.68    0.71
+moto             84.92   0.49    0.91
+utenti_deboli    86.93   0.60    0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   60.30   0.60    0.60
+tempo            78.39   0.69    0.76
+grave            72.36   0.68    0.72
+moto             84.92   0.49    0.91
+utenti_deboli    86.93   0.60    0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   60.30   0.60    0.60
+tempo            77.39   0.67    0.75
+grave            72.36   0.68    0.71
+moto             84.92   0.49    0.91
+utenti_deboli    86.93   0.60    0.88
+
+_______________________________________________________________________________________________________
+
+Prompt 6-8: frasi ridotte 2, 4, 6 esempi
+
+examples = {
+    "localizzazione": [
+        ("La sua auto si è schiantata contro una pianta in località Baracca Ceno.", 1),
+        ("Come sindaco e come rappresentante della comunità ci tengo a ricordarlo.", 0),
+        ("Scontro frontale in via Togliatti a Langhirano.", 1),
+        ("Al momento, nel tratto interessato, il traffico è regolare.", 0),
+        ("Loris Catelli, investito da un'auto, è deceduto dopo l'incidente avvenuto in via Roma Nord a Vezzano, in provincia di Reggio Emilia.", 1),
+        ("Sul posto la Polizia Municipale e gli operatori del 118.", 0),
+        ("In via Colorno, il camion coinvolto nell'incidente.", 1),
+        ("Non si conoscono al momento le cause dell'incidente.", 0),
+    ],
+    "tempo": [
+        ("E' accaduto tutto stamattina, 14 aprile, intorno alle 8,30.", 1),
+        ("Il conducente ha perso il controllo del veicolo, che è uscito dalla carreggiata.", 0),
+        ("Il bilancio del terribile scontro di ieri pomeriggio è stato pesante.", 1),
+        ("Si sta cercando di ricostruire la dinamica dell'incidente.", 0),
+        ("L'incidente si è verificato verso le ore 22.", 1),
+        ("Auto travolta da un carico di marmo di un tir, avvenuto all' altezza del km 129.", 0),
+        ("Poco prima delle ore 04.30, è stato riaperto il tratto interessato, chiuso a seguito di un incidente.", 1),
+        ("Secondo le prime informazioni l'incidente non avrebbe provocato feriti gravi.", 0),
+    ],
+    "grave": [
+        ("Le sue condizioni di salute sono gravi ma non è in pericolo di vita.", 1),
+        ("L’automobilista ha riportato solo lievi escoriazioni.", 0),
+        ("I sanitari lo hanno trasportato in codice rosso al pronto soccorso dell'Ospedale di Parma.", 1),
+        ("La dinamica dell'incidente non è ancora chiara.", 0),
+        ("Il caso di una donna trans investita e uccisa da un'auto mentre si trovava a piedi lungo la tangenziale Sud.", 1),
+        ("L'altro conducente non ha riportato ferite e ha rifiutato il trasporto in Ospedale.", 0),
+        ("Un anziano è stato investito da un auto ed è stato trasportato d'urgenza all'Ospedale Maggiore di Parma.", 1),
+        ("Nella mattinata di oggi si è verificato un incidente stradale che non ha provocato feriti gravi.", 0),
+    ],
+    "moto": [
+        ("Paura per un motociclista caduto a Baganzola.", 1),
+        ("Dopo un contatto tra l'auto e il camion, il rimorchio si sarebbe ribaltato,.", 0),
+        ("Il conducente della moto sarebbe caduto rovinosamente sull'asfalto.", 1),
+        ("Paura per un ciclista caduto a Baganzola.", 0),
+        ("Un motociclista sarebbe caduto sull'asfalto dopo essersi schiantato contro un guardrail.", 1),
+        ("Un pedone è stato investito da un'auto mentre si trovava lungo la carreggiata.", 0),
+        ("Un'auto e una moto si sono scontrate.", 1),
+        ("Due auto sono venute in collisione, provocando il ferimento di quattro persone.", 0),
+    ],
+    "utenti_deboli": [
+        ("All'interno dell'auto anche due bambini, che sono rimasti miracolosamente illesi.", 1),
+        ("L'altro conducente non ha riportato ferite.", 0),
+        ("Il frontale tra due auto non ha purtroppo lasciato scampo all'anziana 82enne.", 1),
+        ("Il conducente dell'auto è rimasto ferito mentre il camionista è rimasto illeso.", 0),
+        ("A Fidenza, un ciclista è stato investito da un'auto.", 1),
+        ("L'auto è finita fuori strada e si è ribaltata.", 0),
+        ("Il bambino non sarebbe comunque in pericolo di vita.", 1),
+        ("Il tratto è stato riaperto ma fino a notte venivano segnalate code.", 0),
+    ]
+}
+
+6:
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   75.88   0.75    0.77
+tempo            76.38   0.61    0.71
+grave            70.35   0.62    0.67
+moto             96.98   0.69    0.98
+utenti_deboli    89.95   0.62    0.89
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   75.88   0.75    0.77
+tempo            76.38   0.61    0.71
+grave            70.35   0.62    0.67
+moto             96.98   0.69    0.98
+utenti_deboli    89.95   0.62    0.89
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   75.88   0.75    0.77
+tempo            76.38   0.61    0.71
+grave            70.35   0.62    0.67
+moto             96.98   0.69    0.98
+utenti_deboli    89.95   0.62    0.89
+
+...............................................................
+
+7:
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   68.84   0.69    0.70
+tempo            80.90   0.74    0.79
+grave            75.38   0.72    0.75
+moto             87.94   0.54    0.92
+utenti_deboli    85.93   0.61    0.87
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   68.84   0.69    0.70
+tempo            80.90   0.74    0.79
+grave            75.38   0.72    0.75
+moto             87.94   0.54    0.92
+utenti_deboli    85.93   0.61    0.87
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   69.35   0.69    0.70
+tempo            80.90   0.74    0.79
+grave            74.37   0.71    0.74
+moto             87.94   0.54    0.92
+utenti_deboli    83.92   0.57    0.86
+
+...............................................................
+
+8:
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   65.83   0.65    0.67
+tempo            76.88   0.64    0.73
+grave            73.87   0.70    0.73
+moto             79.90   0.49    0.88
+utenti_deboli    86.93   0.62    0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   65.83   0.65    0.67
+tempo            76.88   0.64    0.73
+grave            73.87   0.70    0.73
+moto             79.90   0.49    0.88
+utenti_deboli    86.93   0.62    0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   65.83   0.65    0.67
+tempo            76.88   0.64    0.73
+grave            73.87   0.70    0.73
+moto             79.90   0.49    0.88
+utenti_deboli    86.93   0.62    0.88
+
+_______________________________________________________________________________________________________
+
+Prompt 9-12: 2, 4, 6, 8
+
+examples = {
+    "localizzazione": [
+        ("Incidente in via Duca Alessandro.", 1),
+        ("Come sindaco e come rappresentante della comunità ci tengo a ricordarlo.", 0),
+        ("Scontro frontale in via Togliatti a Langhirano.", 1),
+        ("Il traffico è tornato regolare dopo l’incidente.", 0),
+        ("Due auto si sono scontrate all’incrocio tra via Roma e via Verdi.", 1),
+        ("È intervenuta la polizia municipale per i rilievi.", 0),
+        ("Un camion si è ribaltato sulla tangenziale ovest di Parma.", 1),
+        ("Non si conoscono ancora le cause dell’impatto.", 0),
+    ],
+    "tempo": [
+        ("L’incidente è avvenuto questa mattina alle 7:30.", 1),
+        ("La carreggiata è stata chiusa per alcune ore.", 0),
+        ("Il sinistro è avvenuto ieri pomeriggio in centro città.", 1),
+        ("La dinamica è ancora in corso di accertamento.", 0),
+        ("Poco prima delle 22, un’auto ha perso il controllo.", 1),
+        ("Il traffico è rimasto rallentato dopo lo scontro.", 0),
+        ("Nella notte di domenica, due mezzi si sono scontrati.", 1),
+        ("L’incidente ha causato solo lievi disagi alla circolazione.", 0),
+    ],
+    "grave": [
+        ("Le sue condizioni sono gravi ma non è in pericolo di vita.", 1),
+        ("Secondo le prime informazioni il conducente avrebbe fortunatamente riportato solo ferite lievi.", 0),
+        ("Il ferito è stato trasportato in codice rosso all’ospedale.", 1),
+        ("L’uomo è stato medicato sul posto e dimesso poco dopo.", 0),
+        ("Grave incidente stradale in tangenziale nord.", 1),
+        ("La donna ha rifiutato il trasporto in ospedale.", 0),
+        ("Un bambino è stato trasportato d’urgenza al Maggiore.", 1),
+        ("Il sinistro non ha provocato feriti.", 0),
+    ],
+    "moto": [
+        ("Paura per un motociclista caduto a Baganzola.", 1),
+        ("Un camion ha perso il carico in autostrada.", 0),
+        ("Un ragazzo minorenne è caduto dalla moto in via Kennedy.", 1),
+        ("Un ciclista è caduto lungo la pista ciclabile.", 0),
+        ("Un motociclista ha perso il controllo del mezzo in curva.", 1),
+        ("Un pedone è stato investito da un’auto.", 0),
+        ("Un’auto e una moto si sono scontrate frontalmente.", 1),
+        ("Due automobili si sono tamponate sulla statale.", 0),
+    ],
+    "utenti_deboli": [
+        ("All’interno dell’auto anche due bambini, miracolosamente illesi.", 1),
+        ("Il conducente non ha riportato ferite.", 0),
+        ("Una donna anziana è stata investita sulle strisce.", 1),
+        ("L’autista del tir è rimasto illeso.", 0),
+        ("Un ciclista è stato travolto in via Mazzini.", 1),
+        ("Un’autovettura è finita fuori strada senza feriti.", 0),
+        ("Un bambino è stato soccorso dai sanitari dopo l’incidente.", 1),
+        ("La strada è stata riaperta dopo i rilievi.", 0),
+    ]
+}
+
+9:
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   72.86   0.72    0.74
+tempo            82.91   0.76    0.81
+grave            70.85   0.62    0.67
+moto             96.48   0.67    0.97
+utenti_deboli    90.95   0.53    0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato  
+--------------------------------------------------
+localizzazione   72.36   0.72    0.73
+tempo            83.42   0.76    0.81
+grave            69.85   0.59    0.65
+moto             96.98   0.69    0.98
+utenti_deboli    90.95   0.53    0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   72.36   0.72    0.73
+tempo            83.42   0.76    0.82
+grave            70.35   0.61    0.67
+moto             97.49   0.72    0.98
+utenti_deboli    90.95   0.53    0.88
+
+...............................................................
+
+10:
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   71.36   0.71    0.72
+tempo            78.89   0.69    0.76
+grave            71.86   0.65    0.70
+moto             92.46   0.59    0.95
+utenti_deboli    88.94   0.58    0.88
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   71.86   0.71    0.73
+tempo            78.89   0.70    0.77
+grave            72.86   0.67    0.71
+moto             91.96   0.53    0.95
+utenti_deboli    89.95   0.62    0.89
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   71.86   0.71    0.73
+tempo            77.39   0.66    0.74
+grave            72.36   0.67    0.71
+moto             91.46   0.53    0.94
+utenti_deboli    89.45   0.61    0.89
+
+...............................................................
+
+11:
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   61.31   0.61    0.61
+tempo            77.89   0.70    0.76
+grave            78.39   0.76    0.78
+moto             83.42   0.51    0.90
+utenti_deboli    86.43   0.50    0.86
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   62.31   0.62    0.62
+tempo            78.39   0.71    0.77
+grave            77.89   0.75    0.78
+moto             83.92   0.51    0.90
+utenti_deboli    86.43   0.53    0.86
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   60.80   0.61    0.61
+tempo            78.39   0.70    0.77
+grave            78.39   0.76    0.78
+moto             85.93   0.52    0.91
+utenti_deboli    86.43   0.46    0.85
+
+...............................................................
+
+12:
+
+Label            Accuratezza    F1 medio        F1 ponderato
+--------------------------------------------------
+localizzazione   52.26   0.52    0.50
+tempo            79.90   0.75    0.79
+grave            76.88   0.74    0.77
+moto             79.90   0.49    0.88
+utenti_deboli    89.95   0.47    0.87
+
+Label            Accuratezza    F1 medio        F1 ponderato  
+--------------------------------------------------
+localizzazione   51.76   0.51    0.50
+tempo            80.40   0.76    0.80
+grave            77.39   0.75    0.77
+moto             81.41   0.50    0.88
+utenti_deboli    89.45   0.47    0.87
+
+Label            Accuratezza    F1 medio        F1 ponderato  
+--------------------------------------------------
+localizzazione   52.76   0.52    0.51
+tempo            77.89   0.72    0.77
+grave            77.89   0.76    0.78
+moto             80.90   0.49    0.88
+utenti_deboli    89.45   0.47    0.87
+
+_______________________________________________________________________________________________________
