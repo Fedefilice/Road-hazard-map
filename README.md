@@ -1,8 +1,7 @@
 # Road-hazard-map 🇬🇧
 
-My thesis project: Comparison of LLM and Transformer models for the classification of newspaper articles regarding road accidents. 
----
-
+My thesis project: Comparison of LLM and Transformer models for the classification of newspaper articles regarding road accidents
+ 
 ## Project Overview
 
 This project investigates the use of Large Language Models (LLMs) for the automatic analysis of newspaper articles related to road accidents, with the goal of transforming unstructured textual data into structured information for road safety analysis.
@@ -29,9 +28,7 @@ This work demonstrates that the integration of NLP techniques, geolocation, and 
 
 # Mappa di pericolosità stradale  🇮🇹 
 
-**Il mio progetto di tesi: # Confronto di modelli LLM e Transformer per la classificazione di articoli di giornale riguardanti incidenti stradali.
-** 
----
+Il mio progetto di tesi: Confronto di modelli LLM e Transformer per la classificazione di articoli di giornale riguardanti incidenti stradali.
 
 ## Panoramica del progetto 
 
