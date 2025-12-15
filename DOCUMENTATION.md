@@ -74,7 +74,7 @@ Lo script:
 - Gestisce gli errori chiedendo se continuare
 - Fornisce un riepilogo finale dell'esecuzione
 
-## File di Output Principali (Root)
+## File Root
 
 - `heatmap_esperimento.html` - Mappa interattiva degli incidenti dal dataset sperimentale
 - `heatmap_opendata.html` - Mappa interattiva dei dati storici OpenData
@@ -90,9 +90,3 @@ Lo script:
 - Librerie: pandas, numpy, folium, geopy, transformers, torch
 - Modelli NLP locali nella cartella `local_model/`
 - Modello NER in `it_nerIta_trf/`
-
-## Note
-
-- La cartella `cache/` contiene cache di modelli e risultati intermedi
-- `__pycache__/` contiene file compilati Python
-- I file `.gitignore` escludono dal versioning cartelle pesanti e temporanee
